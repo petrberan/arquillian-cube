@@ -3,10 +3,14 @@ name: Arquillian-Cube Maven Build
 on:
   push:
     branches:
-      - '**'
+      - master
   pull_request:
     branches:
-      - '**'
+      - master
+    paths-ignore:
+      - 'doc/**'
+      - '.circleci/**'
+      - '.travis/**'
 env:
   # failsafe.groups configuration depends on the env setup.
   FAILSAFE_GROUPS: ''
