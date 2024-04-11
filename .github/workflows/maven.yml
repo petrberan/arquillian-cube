@@ -23,7 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        java: ['8']
+        java: ['11']
 
     steps:
       - name: Setup Minikube
